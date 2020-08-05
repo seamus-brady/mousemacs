@@ -2,6 +2,12 @@
 ;;; Define mousemacs keybindings here
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+(use-package bind-key :ensure t)
+
+;; save file - this should work :)
+(define-key (current-global-map) (kbd "C-s") nil)
+(bind-key* (kbd "C-s") 'save-buffer)
+
 ;; select all
 (define-key (current-global-map) (kbd "C-a") nil)
 (global-set-key (kbd "C-a") 'mark-whole-buffer)
@@ -10,9 +16,7 @@
 (define-key (current-global-map) (kbd "C-n") nil)
 (global-set-key (kbd "C-n") 'new-empty-buffer)
 
-;; save file
-(define-key (current-global-map) (kbd "C-s") nil)
-(global-set-key (kbd "C-s") 'save-buffer)
+
 
 ;; open file
 (define-key (current-global-map) (kbd "C-o") nil)
