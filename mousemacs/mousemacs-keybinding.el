@@ -33,8 +33,12 @@
 (bind-key* (kbd "C-w") 'switch-window)
 
 ;; swiper, counsel and ivy settings
-(bind-key* (kbd "C-f") 'swiper)
+(bind-key* (kbd "C-f") 'swiper-isearch)
+;;(global-set-key (kbd "C-s") 'swiper-isearch)
+(bind-key* (kbd "C-r") 'swiper)  ;; like Goto Anything
 (bind-key* (kbd "M-x")  'counsel-M-x)
+(bind-key* (kbd "C-S-p")  'counsel-M-x) ;; like sublimetext/vscode
+
 
 ;; file explorer
 (bind-key*  [f8] 'neotree-toggle)

@@ -446,6 +446,10 @@ prompt before closing."
 (use-package counsel :ensure t)
 (use-package swiper :ensure t)
 
+;; use fuzzy search
+(setq ivy-re-builders-alist
+      '((t . ivy--regex-fuzzy)))
+
 ;; install smex for sorting commands
 (use-package smex
   :ensure t
