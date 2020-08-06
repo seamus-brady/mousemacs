@@ -227,7 +227,7 @@
 (electric-pair-mode)
 
 ;; start with a maximised window
-;;(add-to-list 'default-frame-alist '(fullscreen . maximized))
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; GUI Hooks here
@@ -293,7 +293,7 @@
     (put 'buffer-offer-save 'permanent-local t)
     (setq buffer-offer-save t)))
 
-;; prompt f non-file buffer has changes before killing
+;; prompt if non-file buffer has changes before killing
 (defadvice kill-buffer (around kill-buffer-ask activate)
   "If `buffer-offer-save' is non-nil and a buffer is modified,
 prompt before closing."
