@@ -24,6 +24,14 @@
 (define-key (current-global-map) (kbd "C-k") nil)
 (bind-key* (kbd "C-k") ' kill-buffer )
 
+;; open buffer list
+(define-key (current-global-map) (kbd "C-S-b") nil)
+(bind-key* (kbd "C-S-b") 'buffer-menu )
+
+;; open recent file list
+(define-key (current-global-map) (kbd "C-S-r") nil)
+(bind-key* (kbd "C-S-r") 'recentf-open-files)
+
 ;; quit
 (define-key (current-global-map) (kbd "C-q") nil)
 (bind-key* (kbd "C-q") 'save-buffers-kill-terminal)
