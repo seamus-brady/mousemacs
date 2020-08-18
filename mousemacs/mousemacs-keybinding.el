@@ -41,19 +41,20 @@
 (bind-key* (kbd "C-w") 'switch-window)
 
 ;; swiper, counsel and ivy settings
-(bind-key* (kbd "C-f") 'swiper-isearch)
-;;(global-set-key (kbd "C-s") 'swiper-isearch)
-(bind-key* (kbd "C-r") 'swiper)  ;; like Goto Anything
+(bind-key* (kbd "C-f") 'swiper)
 (bind-key* (kbd "M-x")  'counsel-M-x)
 (bind-key* (kbd "C-S-p")  'counsel-M-x) ;; like sublimetext/vscode
 
+;; imenu-everywhere - like Goto Anything
+(define-key (current-global-map) (kbd "C-r") nil)
+(bind-key* (kbd "C-r") 'imenu-anywhere)
 
 ;; file explorer
 (bind-key*  [f8] 'neotree-toggle)
 (define-key (current-global-map) (kbd "C-s") nil)
 (bind-key* (kbd "C-e") 'neotree-toggle)
 
-;; [Home] & [End] key should take you to beginning and end of lines..
+;; [Home] & [End] key should take you to beginning and end of lines.
 (bind-key* [home] 'beginning-of-line)
 (bind-key* [end] 'end-of-line)
 
