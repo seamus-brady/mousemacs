@@ -16,14 +16,27 @@ Underneath Mousemacs is still Emacs.
 
 ## Key Bindings
 
+- Standard key bindings for cut/copy/paste work.
+- Switch tabs with Ctrl-Tab.
+- Home/End work as expected.
+
 | Keys   |      Function    |
 |----------|:-------------:|
-| CTRL-s |  Save file buffer |
-| CTRL-a |    Select all   |
-| CTRL-n | New empty file buffer |
-| CTRL-o | Open file |
-| CTRL-k | Close file buffer |
-| CTRL-SHIFT-b | New empty file buffer |
+| Ctrl-s |  Save file buffer |
+| Ctrl-a |    Select all   |
+| Ctrl-n | New empty file buffer |
+| Ctrl-o | Open file |
+| Ctrl-k | Close file buffer |
+| Ctrl-Shift-b | Open file buffer list |
+| Ctrl-Shift-r | Open recent file list |
+| Ctrl-q | Quit Emacs |
+| Ctrl-w | Switch window |
+| Ctrl-f | Fine in buffer (Swiper) |
+| Ctrl-Shift-p or Standard Emacs M-x | Run command |
+| Ctrl-r | Goto anything (Emacs command is imenu-anywhere)|
+| Ctrl-e or F8 | Toggle file explorer|
+| Ctrl-b | Open other file buffer |
+
 
 
 

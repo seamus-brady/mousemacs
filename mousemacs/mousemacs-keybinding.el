@@ -51,7 +51,7 @@
 
 ;; file explorer
 (bind-key*  [f8] 'neotree-toggle)
-(define-key (current-global-map) (kbd "C-s") nil)
+(define-key (current-global-map) (kbd "C-e") nil)
 (bind-key* (kbd "C-e") 'neotree-toggle)
 
 ;; [Home] & [End] key should take you to beginning and end of lines.
