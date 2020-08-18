@@ -3,4 +3,4 @@
 A mouse driven Emacs
 
 
-![GitHub Logo](/resources/screenshotpng)
+![Screenshot](/resources/screenshot.png)
