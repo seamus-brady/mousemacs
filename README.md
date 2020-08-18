@@ -11,7 +11,12 @@ Mousemacs comes with the following:
 
 Underneath Mousemacs is still Emacs.
 
-## FAQ
+## Install
+
+- Back up your current emacs config.
+- Git clone Mousemacs as below:
+```git clone https://github.com/corvideon/mousemacs.git ~/.emacs.d
+- Mousemacs will take a few moments to download and install all packages.
 
 
 ## Key Bindings
