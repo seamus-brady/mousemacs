@@ -18,9 +18,12 @@ Underneath Mousemacs is still Emacs.
 
 | Keys   |      Function    |
 |----------|:-------------:|
-| col 1 is |  left-aligned |
-| col 2 is |    centered   |
-| col 3 is | right-aligned |
+| CTRL-s |  Save file buffer |
+| CTRL-a |    Select all   |
+| CTRL-n | New empty file buffer |
+| CTRL-o | Open file |
+| CTRL-k | Close file buffer |
+| CTRL-SHIFT-b | New empty file buffer |
 
 
 
