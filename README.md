@@ -1,6 +1,4 @@
-# mousemacs
-
-A mouse-driven Emacs!
+# Mousemacs
 
 Mousemacs is an Emacs setup for those who want the power of Emacs but also want to use a mouse.
 
@@ -11,7 +9,15 @@ Mousemacs comes with the following:
 - A useful context menu with useful shortcuts.
 - A built in file explorer (NeoTree).
 
+Underneath Mousemacs is still Emacs.
+
+## FAQ
+
+
+
 ## Screenshots
+
+#### The tabbed interface:
 
 ![Screenshot](/images/screenshot.png)
 
