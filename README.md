@@ -1,7 +1,17 @@
 # mousemacs
 
-A mouse driven Emacs
+A mouse-driven Emacs!
 
+Mousemacs is an Emacs setup for those who want the power of Emacs but also want to use a mouse.
+
+Mousemacs comes with the following:
+- Standard keyboard shortcuts for cut/copy/paste.
+- Similar keyboard shortcuts to Visual Studo Code or Sublime Text.
+- File open in tabs and can be closed with a menu.
+- A useful context menu with useful shortcuts.
+- A built in file explorer (NeoTree).
+
+## Screenshots
 
 ![Screenshot](/images/screenshot.png)
 

@@ -223,9 +223,6 @@
 (setq custom-file (concat user-emacs-directory "/custom.el"))
 (load custom-file 'noerror)
 
-;; turn on parameter to match quotes
-(electric-pair-mode)
-
 ;; start with a maximised window
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
