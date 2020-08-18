@@ -17,12 +17,18 @@ Underneath Mousemacs is still Emacs.
 
 ## Screenshots
 
-#### The tabbed interface:
+The main interface with file explorer. Note the friendly 'Files' button on the menu to toggle it:
 
 ![Screenshot](/images/screenshot.png)
 
+The file tabs:
+
 ![Tabs](/images/tabs.png)
 
+The context menu available on the tab bar:
+
 ![Tab menu](/images/tab_menu.png)
+
+The context menu which has shortcuts to lots of useful things such as window tools, buffer lists and more:
 
 ![Context menu](/images/context_menu.png)
