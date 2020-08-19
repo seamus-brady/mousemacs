@@ -29,8 +29,8 @@ Underneath Mousemacs is still Emacs.
 
 | Keys   |      Function    |
 |----------|:-------------:|
-| Ctrl-s |  Save file buffer |
-| Ctrl-a |    Select all   |
+| Ctrl-s | Save file buffer |
+| Ctrl-a | Select all   |
 | Ctrl-n | New empty file buffer |
 | Ctrl-o | Open file |
 | Ctrl-k | Close file buffer |
