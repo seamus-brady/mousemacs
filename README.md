@@ -13,12 +13,13 @@ Underneath Mousemacs is still Emacs.
 
 ## Install
 
+- Install Emacs.
 - Back up your current emacs config.
 - Git clone Mousemacs as below:
 
 ```git clone https://github.com/corvideon/mousemacs.git ~/.emacs.d```
 
-- Mousemacs will take a few moments to download and install all packages.
+- Restart Emacs and Mousemacs will take a few moments to download and install all packages.
 
 
 ## Key Bindings
@@ -28,7 +29,7 @@ Underneath Mousemacs is still Emacs.
 - Home/End work as expected.
 
 | Keys   |      Function    |
-|----------|:-------------:|
+|----------|:--------------|
 | Ctrl-s | Save file buffer |
 | Ctrl-a | Select all   |
 | Ctrl-n | New empty file buffer |
@@ -43,7 +44,6 @@ Underneath Mousemacs is still Emacs.
 | Ctrl-r | Goto anything (Emacs command is imenu-anywhere)|
 | Ctrl-e or F8 | Toggle file explorer|
 | Ctrl-b | Open other file buffer |
-
 
 
 
