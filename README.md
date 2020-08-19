@@ -39,7 +39,7 @@ Underneath Mousemacs is still Emacs.
 | Ctrl-Shift-r | Open recent file list |
 | Ctrl-q | Quit Emacs |
 | Ctrl-w | Switch window |
-| Ctrl-f | Fine in buffer (Swiper) |
+| Ctrl-f | Find in buffer (Swiper) |
 | Ctrl-Shift-p or Standard Emacs M-x | Run command |
 | Ctrl-r | Goto anything (Emacs command is imenu-anywhere)|
 | Ctrl-e or F8 | Toggle file explorer|
