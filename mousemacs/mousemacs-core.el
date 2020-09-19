@@ -287,6 +287,8 @@
   (interactive)
   (let ((buf (generate-new-buffer "Untitled")))
     (switch-to-buffer buf)
+    (normal-mode 1)
+    (linum-mode 1)
     (put 'buffer-offer-save 'permanent-local t)
     (setq buffer-offer-save t)))
 
@@ -442,10 +444,6 @@ prompt before closing."
 ;; add some support packages
 (use-package counsel :ensure t)
 (use-package swiper :ensure t)
-
-;; use fuzzy search
-(setq ivy-re-builders-alist
-      '((t . ivy--regex-fuzzy)))
 
 ;; install smex for sorting commands
 (use-package smex
