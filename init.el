@@ -1,13 +1,13 @@
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(setq gc-cons-threshold 100000000)
 
-(package-initialize)
+(eval-after-load "enriched"
+  '(defun enriched-decode-display-prop (start end &optional param)
+     (list start end)))
 
-(defvar mousemacs-path
-		(concat user-emacs-directory
-        (convert-standard-filename "mousemacs/")))
-
-;; load mousemacs
-(load (concat mousemacs-path "mousemacs-core.el"))
-(load (concat mousemacs-path "mousemacs-theme.el"))
-(load (concat mousemacs-path "mousemacs-keybinding.el"))
-(load (concat mousemacs-path "mousemacs-etc.el"))
+(defun load-directory (dir)
+     (let ((load-it (lambda (f)
+		       (load-file (concat (file-name-as-directory dir) f)))
+		     ))
+	(mapc load-it (directory-files dir nil "\\.el$"))))
+    (load-directory "~/.emacs.d/mousemacs/")
+    (load-directory "~/.emacs.d/)
