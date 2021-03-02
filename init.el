@@ -10,4 +10,4 @@
 		     ))
 	(mapc load-it (directory-files dir nil "\\.el$"))))
     (load-directory "~/.emacs.d/mousemacs/")
-    (load-directory "~/.emacs.d/)
+    (load-directory "~/.emacs.d/")
