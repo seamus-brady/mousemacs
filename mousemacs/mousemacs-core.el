@@ -26,11 +26,19 @@
 (setq package-enable-at-startup nil) ; tells emacs not to load any packages before starting up
 ;; the following lines tell emacs where on the internet to look up
 ;; for new packages.
-(setq package-archives '(("org"       . "http://orgmode.org/elpa/")
-                         ("gnu"       . "http://elpa.gnu.org/packages/")
-                         ("melpa"     . "https://melpa.org/packages/")))
 
-(package-initialize) ; guess what this one does ?
+(setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3") ;;Fix error conn repos..
+(when (>= emacs-major-version 24)
+(setq package-archives'(
+
+          ("org"       . "http://orgmode.org/elpa/")
+          ("melpa-mirrors" . "http://www.mirrorservice.org/sites/melpa.org/packages/")
+          ("gnu"       . "http://elpa.gnu.org/packages/")
+          ("melpa"     . "https://melpa.org/packages/")
+          ("melpa-stable"     . "https://stable.melpa.org/packages/"))))
+
+
+(package-initialize) ; guess what this one does ? yes
 
 ;; Bootstrap `use-package'
 (unless (package-installed-p 'use-package) ; unless it is already installed
