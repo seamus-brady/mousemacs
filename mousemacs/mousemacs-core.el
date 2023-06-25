@@ -388,10 +388,8 @@ prompt before closing."
 ;;; An extension to the Emacs text editor that automatically pairs braces and quotes
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(use-package autopair :ensure t)
-
-;; start auto-pair everywhere
-(autopair-global-mode)
+;; start electric-pair everywhere
+(electric-pair-mode)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Highlights delimiters such as parentheses according to their depth
