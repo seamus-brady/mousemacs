@@ -796,7 +796,9 @@ argument is the MODE for the new buffer.")
         "Window"
         ["Split Window Top/Bottom" split-window-below]
         ["Split Window Left/Right" split-window-right]
-        ["View Only Current Window" delete-other-windows]))
+        ["View Only Current Window" delete-other-windows]
+        ["Close Current Window" delete-window]
+        ["Close Current Window (and Buffer)" kill-buffer-and-window]))
 
 ;; Buffer menu
 (easy-menu-add-item nil '("edit") (list
