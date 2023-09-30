@@ -206,7 +206,7 @@
 (put 'upcase-region 'disabled nil)
 
 ;; line numbers
-(global-linum-mode t)
+(global-display-line-numbers-mode 1) ;; Enable line numbers globally
 (setq linum-format " %3d ")
 
 ;; reload a file if changed in external program
