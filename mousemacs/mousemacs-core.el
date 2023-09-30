@@ -207,7 +207,7 @@
 
 ;; line numbers
 (global-display-line-numbers-mode 1) ;; Enable line numbers globally
-(setq linum-format " %3d ")
+
 
 ;; reload a file if changed in external program
 (global-auto-revert-mode t)
@@ -290,7 +290,7 @@
   (let ((buf (generate-new-buffer "Untitled")))
     (switch-to-buffer buf)
     (normal-mode 1)
-    (linum-mode 1)
+    (display-line-numbers-mode 1) 
     (put 'buffer-offer-save 'permanent-local t)
     (setq buffer-offer-save t)))
 
