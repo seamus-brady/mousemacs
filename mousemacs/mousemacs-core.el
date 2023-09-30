@@ -30,7 +30,8 @@
                          ("gnu"       . "http://elpa.gnu.org/packages/")
                          ("melpa"     . "https://melpa.org/packages/")))
 
-(package-initialize) ; guess what this one does ?
+(unless (>= emacs-major-version 27)
+  (package-initialize)) ; guess what this one does ?
 
 ;; Bootstrap `use-package'
 (unless (package-installed-p 'use-package) ; unless it is already installed
@@ -75,7 +76,8 @@
 (use-package auto-compile :ensure t)
 
 (setq load-prefer-newer t)
-(package-initialize)
+(unless (>= emacs-major-version 27)
+  (package-initialize))
 (require 'auto-compile)
 (auto-compile-on-load-mode)
 (auto-compile-on-save-mode)
